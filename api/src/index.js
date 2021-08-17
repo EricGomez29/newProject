@@ -1,6 +1,6 @@
 import app from './app';
 
-const main = async () => {
+async function main() {
     await app.listen(4000);
     console.log('Server on port 4000');
 }

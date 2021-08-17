@@ -1,6 +1,6 @@
 import Project from '../models/Project';
 
-export const getProjects = async (req, res) => {
+export async function getProjects(req, res) {
     try {
         const projects = await Project.findAll();
         res.json({
@@ -13,9 +13,9 @@ export const getProjects = async (req, res) => {
             data: {}
         });
     }
-}
+};
 
-export const createProject = async (req, res) => {
+export async function createProject(req, res) {
     const { nombre, prioridad, descripcion, fecha_entrega } = req.body;
     try {
         var newProject = await Project.create({
@@ -41,7 +41,7 @@ export const createProject = async (req, res) => {
     }
 }
 
-export const getOneProject = async (req, res) => {
+export async function getOneProject(req, res) {
     const { id } = req.params
     try {
         const project = await Project.findOne({
@@ -61,7 +61,7 @@ export const getOneProject = async (req, res) => {
     }
 }
 
-export const deleteProject = async (req, res) => {
+export async function deleteProject(req, res) {
     const { id } = req.params
     try {
         const project = await Project.destroy({
@@ -82,7 +82,7 @@ export const deleteProject = async (req, res) => {
     }
 }
 
-export const updateProject = async (req, res) => {
+export async function updateProject(req, res) {
     const { id } = req.params;
     const { nombre, prioridad, descripcion, fecha_entrega } = req.body;
 

@@ -1,6 +1,6 @@
 import Task from "../models/Task";
 
-export const createTask = async (req, res) => {
+export async function createTask(req, res) {
     const { nombre, finalizada, project_id } = req.body;
     const newTask = await Task.create({
         nombre,
@@ -13,24 +13,4 @@ export const createTask = async (req, res) => {
         message: "Nueva tarea creada",
         data: newTask
     })
-}
-
-export const getTasks = async (req, res) => {
-    
-}
-
-export const getOneTask = async (req, res) => {
-    
-}
-
-export const updateTask = async (req, res) => {
-    
-}
-
-export const deleteTask = async (req, res) => {
-    
-}
-
-export const getTasksByProject = async (req, res) => {
-    
 }
