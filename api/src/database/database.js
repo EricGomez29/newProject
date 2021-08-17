@@ -1,11 +1,14 @@
+require('dotenv').config();
 import Sequelize from 'sequelize';
+
+const { DB_HOST, DB_USER, DB_PASS } = process.env;
 
 export const sequelize = new Sequelize(
     'postgres',
-    'postgres',
-    '123',
+    `${DB_USER}`,
+    `${DB_PASS}`,
     {
-        host: 'localhost',
+        host: `${DB_HOST}`,
         dialect: 'postgres',
         pool: {
             max: 5,
