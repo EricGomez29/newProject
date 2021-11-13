@@ -1,0 +1,8 @@
+{"products": [
+    {"nombre": "Hamburguesas", "precio": "$380", "sabores": ["surtidas","remolacha", "soja", "espinaca"], "cant": "paquete", "pack": "5 unidades", "img": "foto", "descripcion": "1 paquete de 5 unidades" },
+    {"nombre": "Croquetas", "precio": "$380", "sabores": ["espinaca", "berenjena"], "cant": "1/4kg", "img": "foto", "descripcion": "zvxzcvxzvc"},
+    {"nombre": "Bastones de Muzarella", "precio": "$380", "sabores": ["espinaca", "berenjena"], "cant": "1/2kg", "img": "foto", "descripcion": "zdvfzgvzv"},
+    {"nombre": "Milanesas de papa", "precio": "$450", "sabores": ["papa"], "cant": "1/2kg", "img": "foto", "descripcion": "rebozados con copos de maiz"},
+    {"nombre": "Milanesas de pollo", "precio": "$450", "sabores": ["pollo", "con chia"], "cant": "1/2kg", "img": "foto", "descripcion": "rebozados con avena y chia"}
+
+]}

@@ -1,0 +1,13 @@
+.imagen{
+    width: 40%;
+}
+
+.contenedor{
+    width: 40%;
+}
+
+@media (max-width: 600px){
+    .contenedor{
+        width: 100%;
+    }
+}
